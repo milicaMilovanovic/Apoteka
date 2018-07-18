@@ -1,0 +1,22 @@
+.divGreska {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#sadrzaj {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#greske {
+	margin: 0px;
+	padding: 0px;
+}
+
+#greske div {
+	color: white;
+	background-color: rgb(1, 152, 88);
+}
+

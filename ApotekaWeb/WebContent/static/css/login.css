@@ -1,0 +1,167 @@
+body {
+	background-image: url(../img/pozadinaLogin4.jpg);
+	font-family: 'Alegreya', sans-serif;
+	page-break-inside:avoid;
+	height: 100%; 
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn{
+	padding: 15px 32px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(1, 152, 88);
+	box-shadow: none;
+	border-radius: 100;
+	font-size: 16px;
+}
+
+
+h1 {
+	color: rgb(2, 104, 81);
+	text-align: center;
+	margin: 50px;
+	font-family: 'Trocchi', serif;
+	font-size: 60px;
+	font-weight: 800;
+}
+
+h2 {
+	color: rgb(2, 104, 81);
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+div {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+p {
+	text-align: left;
+}
+
+input {
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+
+input[type=text], input[type=password], input[type=date] {
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button, input[type=submit] {
+	background-color: rgb(1, 152, 88);
+	color: white;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+th, td {
+	text-align: left;
+	padding: 15px;
+}
+
+th {
+	height: 30px;
+	background-color: rgb(231,195,127);
+	color: white;
+}
+
+tr:first-child th:first-child {
+	border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+	border-top-right-radius: 10px;
+}
+
+
+.kontejner {	
+	column-count: 2;
+	background-color: rgb(193, 170, 203, 0.4);
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 700px;
+	height: 450px;
+	padding: 20px 40px;
+	margin: 10px 40px;
+}
+
+.kontejnerLog {
+	position: absolute;
+	background-color: rgb(193, 170, 203, 0.6);
+	bottom: 10px;
+	left: 10px;
+	text-align: center;
+	width: 200px;
+	height: 380px;
+	padding: 5px 10px;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.zaReg{
+
+	position: absolute;
+	background-color: rgb(193, 170, 203, 0.6);
+	bottom: 10px;
+	left: 300px;
+	text-align: center;
+	width: 200px;
+	height: 280px;
+	padding: 5px 10px;
+	margin-bottom: 0;
+
+}
+
+
+
+a{
+	color: rgb(255,255,255);
+	padding: 500px 12px 20px;
+	font-family: 'Palatino Linotype', serif;
+}
+.pocTekst{
+	font-family: 'Palatino Linotype', serif;
+	font-weight: 500;
+	margin-bottom: 20px;
+	display: block;
+	text-transform: uppercase;
+	color: #999; 
+	font-style: oblique;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 35px;
+
+
+
+}
+
+#sadrzaj {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#greske {
+	margin: 0px;
+	padding: 0px;
+}
+
+#greske div {
+	color: white;
+	background-color: rgb(1, 152, 88);
+}

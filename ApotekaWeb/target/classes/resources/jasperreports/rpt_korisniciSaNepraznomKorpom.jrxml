@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rpt_KorisniciSaNepraznomKorpom" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6400b671-d339-4dd3-a2f7-5354355a8b46">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="username" class="java.lang.String"/>
+	<field name="ime" class="java.lang.String"/>
+	<field name="prezime" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<variable name="ukupnoKorisnika" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{username}]]></variableExpression>
+	</variable>
+	<variable name="ispisUkupnoKorisnika" class="java.lang.String">
+		<variableExpression><![CDATA["Ukupno korisnika sa nepraznom korpom:" + $V{ukupnoKorisnika}]]></variableExpression>
+	</variable>
+	<variable name="brojReda" class="java.lang.String">
+		<variableExpression><![CDATA[$F{username}]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<rectangle>
+				<reportElement x="60" y="40" width="440" height="50" backcolor="#FDFFC4" uuid="4c088fdc-e48c-4a02-81bf-37f515ae1a55"/>
+				<graphicElement>
+					<pen lineColor="#700A08"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="92" y="50" width="379" height="30" forecolor="#000000" uuid="0d3de100-b4c2-4b0a-a797-8f835f9f196a"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Korisnici sa nepraznom korpom]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="111" y="0" width="100" height="1" uuid="c25b80d4-3916-4b25-b4fd-5d61627803c7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="959ecf15-5cd1-4d7f-99ac-f7b663fd8ea5"/>
+				</reportElement>
+				<text><![CDATA[ime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="100" height="1" uuid="a79c2f57-7a07-459a-93b9-d8083c7c8a3b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6857d1de-2a17-4377-b438-3328c3163ef2"/>
+				</reportElement>
+				<text><![CDATA[cena]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="0" width="100" height="1" uuid="3e3e6c17-224d-4a1f-8fb3-cea6eab0f5b6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7525708a-1351-4a19-9738-df2e3850d03a"/>
+				</reportElement>
+				<text><![CDATA[kategorija]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="0" width="100" height="1" uuid="0a792fe7-8add-4e93-86f6-76b09a301ca9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76f40b42-25cd-4c5d-a01f-56d8e07b9277"/>
+				</reportElement>
+				<text><![CDATA[kolicina]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="" x="159" y="2" width="144" height="31" backcolor="#FCDCB8" uuid="17976417-a3a0-4c51-8833-ef1bd5e7fd38"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineColor="#C93443"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="192" y="5" width="81" height="19" uuid="0a04b5ee-1000-49df-bae8-5134886c7f01"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Ime]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="280" y="2" width="122" height="31" backcolor="#FCDCB8" uuid="b4e9da76-6bbe-47b4-bf83-766b3e3f4e20"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineColor="#C93443"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="280" y="5" width="90" height="24" uuid="a6bba53d-9cf7-4d5e-8a2f-878144c3fb9d"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Prezime]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="2" width="124" height="31" backcolor="#FCDCB8" uuid="bd06b366-02fe-4965-b7c5-16e0129e68e6"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineColor="#C93443"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="380" y="5" width="120" height="25" backcolor="#FCDCB8" uuid="e4978bc7-a46a-4541-9141-8a4b3018f62b"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="60" y="2" width="120" height="31" backcolor="#FCDCB8" uuid="58fb7519-db92-4d83-a292-32eba3dc4d73"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineColor="#C93443"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="68" y="5" width="91" height="25" uuid="90f6f157-c4d7-4b26-8a26-c933d1d40af2"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Username]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<frame>
+				<reportElement x="180" y="0" width="100" height="40" forecolor="#28826A" uuid="dd5c3082-c2df-42da-9dbc-4faab1044958"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#6E1E28"/>
+				</box>
+				<textField>
+					<reportElement x="3" y="7" width="90" height="30" uuid="c6a1d984-bd9b-44ff-a61c-9e5b0ba87049">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="736ff1c7-771c-443c-b6ab-1ca0328f13f6"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{ime}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="280" y="0" width="100" height="40" forecolor="#28826A" uuid="671598d4-2615-47c2-aceb-ac894cbfb2d1"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#6E1E28"/>
+				</box>
+				<textField>
+					<reportElement x="7" y="8" width="89" height="30" uuid="3df5ad26-3823-43cf-ac0f-1bec4f2313a7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b85df0b0-59ef-46c9-a0d9-9df460bc9e1f"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{prezime}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="380" y="0" width="101" height="40" forecolor="#28826A" uuid="264681f3-e7aa-426a-894b-c63deb390040"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#6E1E28"/>
+				</box>
+				<textField>
+					<reportElement x="11" y="9" width="80" height="30" uuid="2826cca9-8cf6-44ed-8e6f-ed8e1bdd3947">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9d4a74d-5ea8-4df3-b676-c2f4b36047e2"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="81" y="0" width="99" height="40" forecolor="#28826A" uuid="059d6595-29a7-45f4-9aa4-e18b9464c4fc"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#6E1E28"/>
+				</box>
+				<textField>
+					<reportElement x="5" y="8" width="89" height="30" uuid="c67cc6b8-a09a-430e-bfb4-534edb864224">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0bbdf6b5-298d-40d0-9754-872c99a49c4e"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="231" y="27" width="100" height="30" uuid="aebb52b5-75ca-4dad-b8cf-94eff00cb580"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="81" y="10" width="399" height="30" uuid="cd060995-d968-4a61-8923-cb04c9a7bf37"/>
+				<textFieldExpression><![CDATA[$V{ispisUkupnoKorisnika}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

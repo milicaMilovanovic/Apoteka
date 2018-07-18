@@ -1,0 +1,51 @@
+body {
+	padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	position: relative;
+    color: rgb(1, 127, 91);
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 3.2;
+    text-decoration: none;
+}
+
+input[type=submit] {
+	padding: 10px 20px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(1, 127, 91);
+	box-shadow: none;
+	border-radius: 100;
+	font-size: 16px;
+}
+.sortCombo {
+	position: relative;
+	margin-rigth: 0;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+table {
+    width:100%;
+}
+table, td {
+    border: 8px solid rgb(255, 255, 255);
+    background-color: rgb(210, 255, 224);
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.btnPrikazi{
+	padding: 5px 10px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(0, 153, 153);
+	box-shadow: none;
+	border-radius: 100;
+}

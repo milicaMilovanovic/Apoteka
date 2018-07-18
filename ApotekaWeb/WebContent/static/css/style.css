@@ -1,0 +1,102 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	padding-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	position: relative;
+    color: rgb(2, 100, 51);
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 3.2;
+    text-decoration: none;
+	color: rgb(2, 75, 39);
+}
+
+.btn, input[type=submit] {
+	padding: 15px 22px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(1, 127, 91);
+	box-shadow: none;
+	border-radius: 100;
+	font-size: 16px;
+}
+
+/*div {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+} */
+
+
+.kontejner {	
+	column-count: 1;
+	background-color: rgb(193, 170, 203, 0.4);
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 500px;
+	height: 300px;
+	padding: 20px 40px;
+	margin: 10px 40px;
+}
+
+/*tabela */
+
+.btnTabela{
+	padding: 10px 20px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(0, 153, 153);
+	box-shadow: none;
+	border-radius: 100;
+}
+
+.btnTabela1 {
+	padding: 20px 30px;
+	border: 0;
+	color: #fff;
+	background-color: rgb(0, 153, 153);
+	box-shadow: none;
+	border-radius: 100;
+}
+
+.btnTabela2{
+	padding: 20px 30px;
+	color: #fff;
+	background-color:  rgb(1, 127, 91);
+	box-shadow: none;
+
+}
+
+.tekstProizvoda{
+	background-color: rgb(210, 255, 224);
+	padding: 30px;
+	width: 350px;
+	height: 200px;
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: rgb(210, 255, 224);
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: rgb(1, 152, 88);
+    color: white;
+}
